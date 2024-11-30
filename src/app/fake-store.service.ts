@@ -11,4 +11,8 @@ export class MiServicio {
   getData(): Observable<any> {
     return this.http.get('https://fakestoreapi.com/products');
   }
+  getProduct(productId: string):Observable<any> {
+    const url = `https://fakestoreapi.com/products/${productId}`;
+    return this.http.get(url);
+  }
 }

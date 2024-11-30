@@ -1,14 +1,26 @@
-<div id="products-div" class="mx-auto  justify-content-evenly container-fluid row">
-  @for (item of products; track $index) {
-    <div class=" col-md-6 col-lg-4 col-xl-3 col-sm-6">
-      <div class="card mx-auto">
-        <img class="card-img-top" src="{{products[$index].image}}" alt="Card image cap">
-        <div class="card-body">
-          <p class="card-title">{{products[$index].title}}</p>
-          <p class="card-price">${{products[$index].price}}</p>
-          <a href="#" class="mb-2 mx-auto btn btn-primary">Add to cart</a>
-        </div>
-      </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="">Fake Store</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button> 
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="">Products</a>
+        </li>
+
+      </ul>
+      <ul class=" navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="py-1 mx-2 nav-item">
+          <img class="svg" src="/svg/cart.svg" alt="">
+        </li>
+        <li class="py-1 mx-2 nav-item">
+          <img class="svg" src="/svg/user.svg" alt="">
+        </li>
+      </ul>
     </div>
-  }
-</div>
+  </div>
+</nav>
+<router-outlet></router-outlet>
+
