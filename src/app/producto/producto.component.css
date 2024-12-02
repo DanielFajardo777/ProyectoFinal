@@ -12,4 +12,6 @@
     padding: 3px 7px;
     border-radius: 5px;
 }
-
+.img-fluid{
+    object-fit: contain;
+}
