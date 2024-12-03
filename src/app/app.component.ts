@@ -1,15 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-import { MiServicio } from './fake-store.service';
+import { MiServicio } from './services/fake-store/fake-store.service';
 import { HttpClient } from '@angular/common/http';
-import { ProductoComponent } from './producto/producto.component';
+import { ProductoComponent } from './components/producto/producto.component';
 import { Router, RouterOutlet } from '@angular/router';
+import { HeaderComponent } from './components/header/header.component';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [HttpClientModule, ProductoComponent,RouterOutlet], // Only import HttpClientModule
+  imports: [HttpClientModule, ProductoComponent,RouterOutlet, HeaderComponent], // Only import HttpClientModule
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
   providers: [HttpClient], // Add HttpClient to providers

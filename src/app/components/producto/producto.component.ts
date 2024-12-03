@@ -1,5 +1,5 @@
 import { Component, input, OnInit } from '@angular/core';
-import { MiServicio } from '../fake-store.service';
+import { MiServicio } from '../../services/fake-store/fake-store.service';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ActivatedRoute } from '@angular/router';
 

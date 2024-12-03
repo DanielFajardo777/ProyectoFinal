@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ProductoComponent } from '../producto/producto.component';
 import { Router } from '@angular/router';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { MiServicio } from '../fake-store.service';
+import { MiServicio } from '../../services/fake-store/fake-store.service';
 import { FormsModule } from '@angular/forms';
 import { map } from 'rxjs';
 
