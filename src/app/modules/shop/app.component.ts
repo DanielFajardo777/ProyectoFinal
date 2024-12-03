@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { MiServicio } from './services/fake-store/fake-store.service';
 import { HttpClient } from '@angular/common/http';
-import { ProductoComponent } from './components/producto/producto.component';
+import { ProductoComponent } from '../../components/producto/producto.component';
 import { Router, RouterOutlet } from '@angular/router';
-import { HeaderComponent } from './components/header/header.component';
-
+import { HeaderComponent } from '../../components/header/header.component';
+import { ShopModule } from './shop.module';
 
 @Component({
   selector: 'app-root',
